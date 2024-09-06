@@ -1,0 +1,196 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*          Rating state start Desktop :                 */
+.container {
+    width: 25%;
+    height: 54%;
+    padding: 2.5%;
+    border-radius: 25px;
+    background-color: hsl(213, 19%, 18%);
+    /* display: none; */
+}
+
+.container .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container .header .star {
+    padding: 13px;
+    margin-bottom: 4%;
+    border-radius: 50%;
+    background-color: hsl(212, 17%, 21%);
+    border: 1px solid transparent;
+}
+
+.container .header .star+span.title {
+    font-size: 2em;
+    color: hsl(0, 0%, 100%);
+}
+
+.container p.text {
+    /* display: flex;
+    flex-direction: column; */
+    color: hsl(217, 12%, 63%);
+}
+
+.container ul {
+    padding: 0;
+    margin: 10.5% 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.container ul li {
+    width: 13%;
+    padding: 3.5% 0;
+    border-radius: 50%;
+    margin-right: calc(35%/4);
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid transparent;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(212, 17%, 21%);
+}
+
+.container ul li.first {
+    margin-left: 0;
+}
+
+.container ul li.last {
+    margin-right: 0;
+}
+
+.container ul li:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.container ul li:active {
+    color: hsl(212, 17%, 21%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container .submit {
+    width: 100%;
+    height: 13%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: hsl(216, 12%, 8%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.container .submit:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*          Rating state end Desktop :                 */
+
+
+/*          Rating state start Mobile :                */
+
+@media(max-width:576px) {
+
+    .container {
+        width: 85%;
+        height: 60%;
+        padding: 5.5%;
+    }
+
+    .container .header .star {
+        padding: 15px;
+        margin-bottom: 5%;
+    }
+
+    .container .header .star+span.title {
+        font-size: 2.5em;
+    }
+
+    .container p.text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container ul {
+        margin: 9% 0px;
+    }
+}
+
+/*               Rating state end Mobile                    */
+
+
+/*            Thank you state start Desktop:                */
+
+.container-two {
+    width: 25%;
+    height: 54%;
+    padding: 2.5%;
+    border-radius: 25px;
+    text-align: center;
+    background-color: hsl(213, 19%, 18%);
+    display: none;
+}
+
+.container .header-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-two .header-two p.selected {
+    width: 60%;
+    padding: 2.5% 0;
+    margin: 4% 20%;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(212, 17%, 21%);
+}
+
+.container-two .thank-you h3+p {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-two .thank-you h3 {
+    font-size: 2em;
+    margin-bottom: 6%;
+    color: hsl(0, 0%, 100%);
+}
+
+.container-two .thank-you h3+p {
+    color: hsl(217, 12%, 63%);
+}
+
+/*            Thank you state end Desktop:                */
+
+
+/*            Thank you state start Mobile:                */
+
+@media(max-width:653.6px) {
+    .container-two {
+        width: 65%;
+        height: 55%;
+        padding: 5%;
+    }
+
+    /* .container p.text {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    /* .container ul {
+        margin: 9% 0px;
+    } */
+}
